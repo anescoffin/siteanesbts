@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title> QCM HTML</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<center>
+<h1>Questionnaire à Choix Multiples</h1>
+
+<form id="qcmForm">
+<fieldset class="f1">
+		<center><legend> Question 1 :</legend></center>
+		<p>Quelle est la capitale de la France ?</p>
+
+		<input type="radio" name="q1" value="paris"> <label> Paris </label>
+		<input type="radio" name="q1" value="algerie"> <label> Algerie </label>
+		<input type="radio" name="q1" value="berlin"> <label> Berlin </label>
+		<input type="radio" name="q1" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f2">
+		<center><legend> Question 2 :</legend></center>
+		<p>Quelle est la capitale de l'Algerie ?</p>
+
+		<input type="radio" name="q2" value="paris"> <label> Paris </label>
+		<input type="radio" name="q2" value="alger"> <label> Alger </label>
+		<input type="radio" name="q2" value="berlin"> <label> Berlin </label>
+		<input type="radio" name="q2" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f3">
+		<center><legend> Question 3 :</legend></center>
+		<p>Quelle est la capitale de la Suisse ?</p>
+
+		<input type="radio" name="q3" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q3" value="berne"> <label> Berne </label>
+		<input type="radio" name="q3" value="ottawa"> <label> Ottawa </label>
+		<input type="radio" name="q3" value="madrid"> <label> Madrid </label>
+	</fieldset>
+
+<fieldset class="f4">
+		<center><legend> Question 4 :</legend></center>
+		<p>Quelle est la capitale du Maroc ?</p>
+
+		<input type="radio" name="q4" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q4" value="berne"> <label> Berne </label>
+		<input type="radio" name="q4" value="ottawa"> <label> Ottawa </label>
+		<input type="radio" name="q4" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f5">
+		<center><legend> Question 5 :</legend></center>
+		<p>Quelle est la capitale de l'Espagne ?</p>
+
+		<input type="radio" name="q5" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q5" value="berne"> <label> Berne </label>
+		<input type="radio" name="q5" value="ottawa"> <label> Ottawa </label>
+		<input type="radio" name="q5" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f6">
+		<center><legend> Question 6 :</legend></center>
+		<p>Quelle est la capitale du Canada ?</p>
+
+		<input type="radio" name="q6" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q6" value="berne"> <label> Berne </label>
+		<input type="radio" name="q6" value="ottawa"> <label> Ottawa </label>
+		<input type="radio" name="q6" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f7">
+		<center><legend> Question 7 :</legend></center>
+		<p>Quelle est la capitale du Bresil ?</p>
+
+		<input type="radio" name="q7" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q7" value="brasil"> <label> Brasil </label>
+		<input type="radio" name="q7" value="ottawa"> <label> Ottawa </label>
+		<input type="radio" name="q7" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f8">
+		<center><legend> Question 8 :</legend></center>
+		<p>Quelle est la capitale du Portugal ?</p>
+
+		<input type="radio" name="q8" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q8" value="marseille"> <label> Marseille </label>
+		<input type="radio" name="q8" value="lisbonne"> <label> Lisbonne </label>
+		<input type="radio" name="q8" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f9">
+		<center><legend> Question 9 :</legend></center>
+		<p>Quelle est la capitale de l'Australie ?</p>
+
+		<input type="radio" name="q9" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q9" value="canberra"> <label> Canberra </label>
+		<input type="radio" name="q9" value="paris"> <label> Paris </label>
+		<input type="radio" name="q9" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+<fieldset class="f10">
+		<center><legend> Question 10 :</legend></center>
+		<p>Quelle est la capitale de la Suède ?</p>
+
+		<input type="radio" name="q10" value="rabat"> <label> Rabat </label>
+		<input type="radio" name="q10" value="berne"> <label> Brasil </label>
+		<input type="radio" name="q10" value="stockholm"> <label>  Stockholm </label>
+		<input type="radio" name="q10" value="madrid"> <label> Madrid </label>
+</fieldset>
+
+    </form>
+	<a href="page2.html"><button class="button">Corrigé </button></a>
+
+	<button type="button" onclick="corrigerQCM()">Résultat</button>
+
+	<a href="page1m3.html"><button>Effacer</button></a>
+
+ <center>
+    <div id="resultat"></div>
+
+    <script>
+       
+        function corrigerQCM() {
+            const formulaire = document.getElementById("qcmForm");
+            const resultat = document.getElementById("resultat");
+            let score = 0;
+
+         
+            if (formulaire.q1.value === "paris") {
+                score++;
+            }
+            if (formulaire.q2.value === "alger") {
+                score++;
+            }
+            if (formulaire.q3.value === "berne") {
+                score++;
+            }
+            if (formulaire.q4.value === "rabat") {
+                score++;
+            }
+            if (formulaire.q5.value === "madrid") {
+                score++;
+            }
+            if (formulaire.q6.value === "ottawa") {
+                score++;
+            }
+            if (formulaire.q7.value === "brasil") {
+                score++;
+            }
+            if (formulaire.q8.value === "lisbonne") {
+                score++;
+            }
+            if (formulaire.q9.value === "canberra") {
+                score++;
+            }
+            if (formulaire.q10.value === "stockholm") {
+                score++;
+            }
+
+
+           
+            resultat.innerHTML = `Votre score : ${score} / 10`;
+
+        }
+    </script>
+
+</center>
+
+
+
+
+</center>
+</body>
+</html>

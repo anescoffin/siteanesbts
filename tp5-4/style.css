@@ -1,0 +1,59 @@
+header {
+	background-color: pink;
+	color: blue;
+	text-align: center;
+	padding: 10px;
+	border-radius: 30px;
+	border: 5px solid blue;
+}
+
+.s1 {
+	background-color: pink;
+	color: blue;
+	text-align: center;
+	padding: 10px;
+	border-radius: 30px;
+	border: 5px solid blue;
+	margin: 10px;
+	height: 500px;
+	width: 650px;
+	float: left;
+
+}
+.s2 {
+	background-color: pink;
+	color: blue;
+	text-align: center;
+	padding: 10px;
+	border-radius: 30px;
+	border: 5px solid blue;
+	margin: 10px;
+	height: 500px;
+	width: 650px;
+	float: left;
+
+}
+.s3 {
+	background-color: pink;
+	color: blue;
+	text-align: center;
+	padding: 10px;
+	border-radius: 30px;
+	border: 5px solid blue;
+	margin: 10px;
+	height: 500px;
+	width: 650px;
+	float: left;
+
+}
+footer {
+	background-color: pink;
+	color: blue;
+	text-align: center;
+	padding: 10px;
+	border-radius: 30px;
+	border: 5px solid blue;
+	clear:both;
+
+
+}

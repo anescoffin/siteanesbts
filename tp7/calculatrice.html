@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculatrice.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculatrice.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Calculatrice</h1>
+        <div>
+            <input class="t" placeholder="Premier Chiffre" type="number" name="t1" id="t1">
+            <input class="t" placeholder="Deuxième Chiffre" type="number" name="t2" id="t2">
+        </div>
+   
+    <div>
+        <button onclick="addition()">+</button>
+        <button onclick="soustraction()">-</button>
+        <button onclick="division()">/</button>
+        <button onclick="multiplication()">x</button>
+    </div>
+    <div>
+        <button onclick="parite()">Pariter</button>
+        <button onclick="permute()">Permuter</button>
+    </div>
+    <div>
+        <input class="t34" placeholder="Résultat" type="text" name="t3" id="t3" readonly>
+    </div>
+    <div>
+        <input class="t34" placeholder="Pair ou Inpair ?" type="text" name="t4" id="t4" readonly>
+    </div> 
+    </center>
+</body>
+</html>

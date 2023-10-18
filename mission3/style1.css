@@ -1,0 +1,48 @@
+button {
+	background-color: #0074d9;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-align: center;
+	margin: 10px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+	width: 150px;
+} 
+	.button:hover {
+		color: #ff4136;
+		background-color: white
+	}
+
+.f1 {
+	background-color: purple
+}
+.f2 {
+	background-color: white
+}
+.f3 {
+	background-color: purple
+}
+.f4 {
+	background-color: white
+}
+.f5 {
+	background-color: purple
+}
+.f6 {
+	background-color: white
+}
+.f7 {
+	background-color: purple
+}
+.f8 {
+	background-color: white
+}
+.f9 {
+	background-color: purple
+}
+.f10 {
+	background-color: white
+}
+a
